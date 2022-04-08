@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 232, 188);
+}
+#container {
+    width: 90%;
+    height: 85vh;
+    background: white;
+    margin-top: 5%;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    h2 {
+        margin-top: 1rem;
+        font-size: 2rem;
+        height: 4rem;
+        text-align: center;
+        flex-basis: 100%;
+    }
+    .objectBox {
+        width: 80%;
+        text-align: center;
+        #objet {
+            img {
+                width: 100%;
+                height: 332px;
+                object-fit: contain;
+            }
+        }
+        #nom_objet {
+            font-weight: bold;
+        }
+    }
+    .answerBox {
+        width: 80%;
+        text-align: center;
+        font-size: 1.5rem;
+        padding-top: 3rem;
+        input {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            text-align: center;
+            width: 100px;
+        }
+        button {
+            padding: .5rem;
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+        #msg {
+            flex-basis: 100%;
+            margin-top: 1rem;
+        }
+        #nb_Essai {
+            margin-top: .7rem;
+        }
+    }
+}
+.success {
+    color: green;
+}
+.fail {
+    color: red;
+}
+.invi {
+    display: none;
+}
+.bold {
+    font-weight: bold;
+}
